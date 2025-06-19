@@ -1,0 +1,26 @@
+﻿@model StudyTracker.Models.Course
+
+@{
+    ViewData["Title"] = "Edit Course";
+}
+
+<h2>Edit Course</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label asp-for="Description"></label>
+        <input asp-for="Description" />
+    </div>
+    <div>
+        <label asp-for="ProfessorName"></label>
+        <input asp-for="ProfessorName" />
+    </div>
+    <div>
+        <input type="submit" value="Save" />
+    </div>
+</form>

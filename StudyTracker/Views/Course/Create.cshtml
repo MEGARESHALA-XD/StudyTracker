@@ -1,0 +1,29 @@
+﻿@model StudyTracker.Models.Course
+
+@{
+    ViewData["Title"] = "Create Course";
+}
+
+<h2>Create Course</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="Id"></label>
+        <input asp-for="Id" />
+    </div>
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label asp-for="Description"></label>
+        <input asp-for="Description" />
+    </div>
+    <div>
+        <label asp-for="ProfessorName"></label>
+        <input asp-for="ProfessorName" />
+    </div>
+    <div>
+        <input type="submit" value="Create" />
+    </div>
+</form>
